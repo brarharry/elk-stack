@@ -56,12 +56,12 @@ Ansible was used to automate configuration of the ELK machine. No configuration 
 
 The playbook implements the following tasks:
 - Installs the following services:
-	-docker.io
-	-python3-pip
-	-docker, which is the Docker Python pip module
--Increases the memory of the ELK-VM
--Downloads Elk container on the ELK-VM
--Enables the service docker on boot
+	- docker.io
+	- python3-pip
+	- docker, which is the Docker Python pip module
+- Increases the memory of the ELK-VM
+- Downloads Elk container on the ELK-VM
+- Enables the service docker on boot
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
@@ -69,8 +69,8 @@ The following screenshot displays the result of running `docker ps` after succes
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
--Web-1: 10.1.0.5
--Web-2: 10.1.0.6
+- Web-1: 10.1.0.5
+- Web-2: 10.1.0.6
 
 We have installed the following Beats on these machines:
 - Filebeat and Metricbeat on both the web servers, Web-1 and Web-2.
@@ -83,9 +83,9 @@ These Beats allow us to collect the following information from each machine:
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
 SSH into the control node and follow the steps below:
--Copy the "install-elk.yml" file to "/etc/ansible/".
--Update the "hosts" file to include the "elk" group, then add the ELK-VM IP and what interpreter it is going to use.
--Run the playbook, and navigate to "http://137.116.119.192:5601/app/kibana" to check that the installation worked as expected.
+- Copy the "install-elk.yml" file to "/etc/ansible/".
+- Update the "hosts" file to include the "elk" group, then add the ELK-VM IP and what interpreter it is going to use.
+- Run the playbook, and navigate to "http://137.116.119.192:5601/app/kibana" to check that the installation worked as expected.
 
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc.
--To run the Playbook: ansible-playbook /etc/ansible/install-elk.yml
+- To run the Playbook: ansible-playbook /etc/ansible/install-elk.yml

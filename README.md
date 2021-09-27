@@ -77,7 +77,7 @@ We have installed the following Beats on these machines:
 
 These Beats allow us to collect the following information from each machine:
 - [Filebeats](https://github.com/brarharry/elk-stack/blob/main/Resources/FileBeat%20check.PNG "Filebeats") collect system logs, for example login activity, active users, and more. 
-- Metricbeats collect information like how healthy machine is, for example cpu usage, memory usage 
+- [Metricbeats](https://github.com/brarharry/elk-stack/blob/main/Resources/MetricBeat%20check.PNG) collect information like how healthy machine is, for example cpu usage, memory usage 
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
@@ -85,7 +85,9 @@ In order to use the playbook, you will need to have an Ansible control node alre
 SSH into the control node and follow the steps below:
 - Copy the "install-elk.yml" file to "/etc/ansible/".
 - Update the "hosts" file to include the "elk" group, then add the ELK-VM IP and what interpreter it is going to use.
+	- ![](https://github.com/brarharry/elk-stack/blob/main/Resources/adding-elk-group.PNG)
 - Run the playbook, and navigate to "http://137.116.119.192:5601/app/kibana" to check that the installation worked as expected.
+	- ![](https://github.com/brarharry/elk-stack/blob/main/Resources/kibana-check.PNG)
 
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc.
 - To run the Playbook: ansible-playbook /etc/ansible/install-elk.yml

@@ -89,5 +89,5 @@ SSH into the control node and follow the steps below:
 - Run the playbook, and navigate to "http://137.116.119.192:5601/app/kibana" to check that the installation worked as expected.
 	- ![](https://github.com/brarharry/elk-stack/blob/main/Resources/kibana-check.PNG)
 
-_The specific commands the user will need to run to download the playbook, update the files, etc.
+The specific commands the user will need to run to download the playbook, update the files, etc.
 - To run the Playbook: ansible-playbook /etc/ansible/install-elk.yml

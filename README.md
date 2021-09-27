@@ -76,7 +76,7 @@ We have installed the following Beats on these machines:
 - Filebeat and Metricbeat on both the web servers, Web-1 and Web-2.
 
 These Beats allow us to collect the following information from each machine:
-- Filebeats collect system logs, for example login activity, active users, and more. 
+- Filebeats ![](https://github.com/brarharry/elk-stack/blob/main/Resources/FileBeat%20check.PNG "Filebeats") collect system logs, for example login activity, active users, and more. 
 - Metricbeats collect information like how healthy machine is, for example cpu usage, memory usage 
 
 ### Using the Playbook
